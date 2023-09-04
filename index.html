@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125416230-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-125416230-1');
+  </script>
+
     <meta charset="utf-8">
     <title>Benridge London</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(function(){
+      $("#footer").load("footer.html");
+    });
+    </script>
+    <link rel="icon"
+      type="image/png"
+      href="images/logo-black.png">
   </head>
   <body>
+
+    <div id="footer"></div>
 
   <!-- <div class="container-fluid"> -->
 
   <div class="colour-strip">
     <!-- <nav class="navbar bg-dark navbar-expand-lg navbar-dark"> -->
     <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="index.html"><img src="logo-white.png" style="width:5%">
+        <a class="navbar-brand" href="index.html"><img src="images/logo-white.png" style="width:5%">
 
-          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="5%" height="5%" fill="currentColor" class="bi bi-grid-1x2-fill" viewBox="0 0 16 16">
-            <path d="M0 1a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm9 0a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1V1zm0 9a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-5z"/>
-          </svg> -->
 
         Benridge London
         </a>
@@ -30,10 +47,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#services">Services</a>
+                <a class="nav-link" href="index.html">Services</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#clients">Clients</a>
+                <a class="nav-link" href="index.html#clients">Clients</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact Us</a>
@@ -48,16 +65,16 @@
       <div class="col-5">
         <h2 id="intro">IT Consultancy Services</h2>
         <p class="hero">
-            Benridge London has been providing IT Consultancy Services for clients in the UK and the US since 2010
+            Benridge London has been providing expert IT and Business Consultancy Services for clients in the UK since 2010
         </p>
         <p class="hero">
-            We have worked with high profile clients across many industries to deliver results via successful digital transformation initiatives
+            We have worked with high profile clients across a range of industries to deliver results via successful digital initiatives and transformations
         </p>
       </div>
       <div class="col-7">
         <p>
           <!-- <img src="IMG_0553 (1).jpg" style="width:100%; opacity:0.4;"> -->
-          <img src="download (2).gif" style="border-radius: 15px 50px; width:100%; opacity:1;">
+          <img src="images/download (2).gif" style="border-radius: 15px 50px; width:100%; opacity:1;">
         </p>
         </ul>
       </div>
@@ -83,25 +100,25 @@
   <div class = "light">
     <div class ="row">
       <div class="col-md-3">
-        <img class="skills" src="question-square-fill.svg" style="width:20%">
+        <img class="skills" src="images/question-square-fill.svg" style="width:20%">
         <p>
-          Business & Technical Analysis
+          Business / Tech / Data Analysis
         </p>
       </div>
       <div class="col-md-3">
-        <img class="skills" src="kanban-fill.svg" style="width:20%">
+        <img class="skills" src="images/kanban-fill.svg" style="width:20%">
         <p>
           Agile Product Ownership
         </p>
       </div>
       <div class="col-md-3">
-        <img class="skills" src="app-indicator.svg" style="width:20%">
+        <img class="skills" src="images/app-indicator.svg" style="width:20%">
         <p>
           Product Management
         </p>
       </div>
       <div class="col-md-3">
-        <img class="skills" src="calendar2-week-fill.svg" style="width:20%">
+        <img class="skills" src="images/calendar2-week-fill.svg" style="width:20%">
         <p>
           Project / Delivery Management
         </p>
@@ -124,40 +141,67 @@
 
   <div class="dark">
       <div class="row">
-        <div class="col-4">
+        <div class="col-md-3">
           <ul style="list-style-type:none">
             <li>
-              <br>Data model design
+              DATA
             </li>
             <li>
-              Data visualisation
+              API design & build
+            </li>
+            <li>
+              Data model design
+            </li>
+            <li>
+              Data visualisation design
             </li>
           </ul>
         </div>
-        <div class="col-4">
+        <div class="col-md-3">
           <ul style="list-style-type:none">
-
             <li>
-              Mobile application design and build
+              APPLICATIONS
             </li>
             <li>
-              Website replatforming and internationalisation
+              Mobile app design & build
             </li>
             <li>
-              API development, re-factoring and integration
+              Web app design & build
             </li>
             <li>
-              Finance system and process re-builds
+              CRM design & build
             </li>
           </ul>
         </div>
-        <div class="col-4">
+        <div class="col-md-3">
           <ul style="list-style-type:none">
             <li>
-              <br>Web applications
+              WEBSITES
             </li>
             <li>
-              CRM Platforms
+              Website design / redesign
+            </li>
+            <li>
+              Website replatforming
+            </li>
+            <li>
+              Platform internationalisation
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul style="list-style-type:none">
+            <li>
+              PROCESS IMPROVEMENT
+            </li>
+            <li>
+              Agile delivery processes
+            </li>
+            <li>
+              Operational processes
+            </li>
+            <li>
+              Content management processes
             </li>
           </ul>
         </div>
@@ -172,38 +216,59 @@
         <div class="col-12">
           <h2 id="clients">Our Clients</h2>
         <div class="col-12">
-          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+          <div id="carouselClients" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500" data-pause = "hover">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-theme="dark" data-bs-target="#carouselClients" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselClients" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselClients" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselClients" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <p>
                   Financial Services
                 </p>
-                <img class="carousel-image" src="premier.png" style="width:20%">
-                <img class="carousel-image" src="visa.png" style="width:20%">
-                <img class="carousel-image" src="worldpay.png" style="width:20%">
+                <img class="carousel-image" src="images/PB1.png" style="width:20%">
+                <img class="carousel-image" src="images/VE.png" style="width:20%">
+                <img class="carousel-image" src="images/WP.png" style="width:20%">
               </div>
               <div class="carousel-item">
                 <p>
                   Media
                 </p>
-                <img class="carousel-image" src="news uk.png" style="width:20%">
-                <img class="carousel-image" src="wireless.jpeg" style="width:20%">
+                <img class="carousel-image" src="images/NU.png" style="width:20%">
+                <img class="carousel-image" src="images/WR1.png" style="width:20%">
               </div>
               <div class="carousel-item">
                 <p>
-                  Marketplace
+                  eCommerce - Marketplace
                 </p>
-                <img class="carousel-image" src="just eat.png" style="width:20%">
-                <img class="carousel-image" src="trainline.png" style="width:20%">
-                <img class="carousel-image" src="treatwell.png" style="width:20%">
-                <img class="carousel-image" src="homeserve.png" style="width:20%">
+                <img class="carousel-image" src="images/JE.png" style="width:20%">
+                <img class="carousel-image" src="images/TW.png" style="width:20%">
+
+              </div>
+              <div class="carousel-item">
+                <p>
+                  eCommerce - Travel
+                </p>
+                <img class="carousel-image" src="images/TL.png" style="width:20%">
+                <img class="carousel-image" src="images/ES.png" style="width:20%">
+
+              </div>
+
+              <div class="carousel-item">
+                <p>
+                  Tech / Other Consumer Services
+                </p>
+                <img class="carousel-image" src="images/TC.png" style="width:20%">
+                <img class="carousel-image" src="images/HS1.png" style="width:20%">
               </div>
               <div class="carousel-item">
                 <p>
                   Digital Transformation Agencies
                 </p>
-                <img class="carousel-image" src="equal experts.png" style="width:20%">
-                <img class="carousel-image" src="concentrix tigerspike.png" style="width:20%">
+                <img class="carousel-image" src="images/EE.png" style="width:20%">
+                <img class="carousel-image" src="images/CT.png" style="width:20%">
               </div>
             </div>
           </div>
@@ -220,7 +285,7 @@
           Footer left
         </div> -->
         <div class="col-12">
-          <img src="logo-white.png" style="width:2%">
+          <img src="images/logo-white.png" style="width:2%">
           <p>
             Benridge London Ltd is registered in England and Wales<br>
             Company No. 07386883<br>
@@ -289,7 +354,7 @@
         </table> -->
 
 
-
+  <script src="index.js" charset="utf-8"></script>
   </body>
 
 
